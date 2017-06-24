@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>云盘管理平台</title>
+		<link rel="stylesheet" href="style/font-awesome.css"  />
+		<link rel="stylesheet" href="style/style.css"  />
+	</head>
+	<body>
+		<div class="tip"></div>
+	 <!--头部 start-->	
+	<div class="header">
+		<div class="logo fl"><img src="images/logo.png"></div>
+		<div class="header_right fr">
+			<ul>
+			  <li><a href="#" title="更换皮肤" id="theme"></a></li>
+			  <li><a href="#" title="设置" id="Setup"></a></li>
+			  <li><a href="#" title="刷新" id="refresh"></a></li>
+			  <li><a href="#" title="注销登录" id="logout"></a></li>
+			</ul>
+		</div>
+	</div>
+   <!--头部 end-->
+   <!---欢迎页 start--->
+   <div class="welcome">
+   	  <!--时间 start-->
+   	   <div class="time"> 
+	   	   	<span id="h1"></span>
+	   	   	<span id="h2"></span>
+	   	   	<strong>:</strong>
+	   	   	<span id="m1"></span>
+	   	   	<span id="m2"></span>
+	   	   	<strong>:</strong>
+	   	   	<span id="s1"></span>
+	   	   	<span id="s2"></span>
+   	   </div>
+   	   <div class="date"></div>
+   	  <!--时间 end-->
+   	  <p>
+   	  	欢迎您<br />
+   	  	进入云盘服务平台
+   	  </p>
+   	 <div class="welbtn"> 
+   	    <button>点击进入</button>
+   	    <span></span>
+   	 </div>
+   </div>
+   <!---欢迎页 end--->
+   
+   <!---内容 start-->
+   <div class="main ov">
+   	  <!--left start-->
+   	   <div class="left fl">
+   	   	  <h6>菜单</h6>
+   	   	  <div class="leftNav">
+   	   	  </div>	
+   	   </div>
+   	  <!--left end-->
+   	    <!--<span class="leftColse">xxxx</span>-->
+   	  <!--right start-->
+   	  <div class="right fl">
+   	  	<div class="nav_box ov">
+   	  	 <nav class="nav fl">
+     	 			<ul>
+				       <li class="fileDownload"><a href="#"><span class="fa fa-cloud-download"></span>下载</a></li>
+				       <li class="fileShare"><a href="#"><span class="fa fa-share-alt"></span>分享</a></li>
+				       <li class="fileSlice"><a href="#"><span class="fa fa-arrows"></span>复制到</a></li>
+				       <li class="fileMove"><a href="#"><span class="fa fa-arrows"></span>移动到</a></li>
+				       <li class="filecmm"><a href="#"><span class="fa fa-plus-square"></span>重命名</a></li>
+				       <li class="fileDelete"><a href="#"><span class="fa fa-trash-o"></span>删除</a></li>
+				       <li class="fileNew"><a href="#"><span class="fa fa-plus-square"></span>新建文件夹</a></li>
+				     </ul>
+     	 </nav>
+     	 <div class="search_box fr">
+     	 			<input type="text" placeholder="搜索您的文件"/>
+     	 			<i class="fa fa-search"></i>
+     	 			<!---切换排序-->
+     	 			<a href="" class="fa fa-sort-amount-asc"></a>
+     	 			<!--切换视图布局-->
+     	 			<a href="#" class="fa fa-server view_btn"></a>
+     	 </div>
+     	</div>
+     	
+     	<!--面包屑导航 start--->
+     	 <div class="loc ov">
+     	 		<p class="checkAll fl">
+     	 			<i class="fa fa-check"></i>
+     	 		</p>
+     	 		<div class="locNav fl"><a href="#">根目录</a></div>
+     	 		<div class="locNavNum fr">已全部加载 共10个</div>
+     	 	</div>
+     	<!--面包屑导航 end-->
+       <div class="rightCon">
+     	<!--图文列表 start	--->
+     	 	<ul class="filePic fileActive" id="filePic">
+     	 			<!--<li>
+     	 				<div class="checkbox"><i  class="fa fa-check"></i></div>
+     	 				<div class="fileImg"></div>
+     	 				<div class="fileName">文件夹</div>
+     	 			</li>-->
+     	  </ul>
+     	<!--图文列表 end	--->
+     	<!--文字列表 start-->
+     	   <ul class="fileList">
+     	 			<!--<li>
+     	 				<div class="checkbox"><i  class="fa fa-check"></i></div>
+     	 				<div class="fileImg"></div>
+     	 				<div class="fileName">文件夹</div>
+     	 				<div class="fileTime">2017-09-03 11:22</a>
+     	 			</li>-->
+     	 	</ul>
+     	<!--文字列表 end--->
+     	</div>
+     	
+   	  </div>
+   	  <!--right end-->
+   </div>
+   <!---内容 end-->
+   <!---移动到start-->
+     	 	<div class="move_bg">
+	     	 	<div class="move_box">
+	     	 		<h3>移动到 <a href="javascript:;">X</a></h3>
+	     	 		<ul id="move_nav">
+					
+				    </ul>
+				    <p class="move_btn"><a href="#">确认</a> <a href="#">取消</a></p>
+	     	 	</div>
+     	 	</div>
+     	 	<!---移动到end-->
+   
+	   <script src="js/data.js"></script>
+	   <script src="js/tool.js"></script>
+	   <script src="js/view.js"></script>
+	   <script src="js/main.js"></script>
+	   <script src="js/index.js"></script>
+	</body>
+</html>
